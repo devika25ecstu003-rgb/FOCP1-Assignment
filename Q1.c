@@ -5,14 +5,14 @@ int main() {
     double result = 0.0;
     printf("Enter an integer: ");
     scanf("%d", &a);
-    originalNum = a;
+    b = a;
     while (b!= 0) {
         b/= 10;
         ++n;
     }
     b=a;
-    while (originalNum != 0) {
-        remainder = b % 10;
+    while (b != 0) {
+        c= b % 10;
         result += pow(c, n);
         b /= 10;
     }
@@ -23,4 +23,5 @@ int main() {
 
     return 0;
 }
+
 
